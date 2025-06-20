@@ -1,0 +1,232 @@
+<html>
+<head>
+<title>kalkulator.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+kalkulator.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">javax</span><span class="s2">.</span><span class="s1">swing</span><span class="s2">.*;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">awt</span><span class="s2">.</span><span class="s1">event</span><span class="s2">.</span><span class="s1">ActionEvent</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">awt</span><span class="s2">.</span><span class="s1">event</span><span class="s2">.</span><span class="s1">ActionListener</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">kalkulator </span><span class="s2">{</span>
+    <span class="s0">private </span><span class="s1">JPanel Calculator</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JTextField txtDisplay</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton AC</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton btnBagi</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton btnKurang</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton btnKali</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton btnHasil</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton btngatau</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton angka7</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton angka4</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton angka1</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton btn00</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton btnTambah</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton angka8</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton angka5</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton angka2</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton angka0</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton btnTambahKurang</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton angka9</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton angka6</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton angka3</span><span class="s2">;</span>
+    <span class="s0">private </span><span class="s1">JButton btnTitik</span><span class="s2">;</span>
+
+    <span class="s0">double </span><span class="s1">a</span><span class="s2">, </span><span class="s1">b</span><span class="s2">, </span><span class="s1">result</span><span class="s2">;</span>
+    <span class="s1">String op</span><span class="s2">;</span>
+
+    <span class="s0">public </span><span class="s1">kalkulator</span><span class="s2">() {</span>
+        <span class="s1">AC</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;&quot;</span><span class="s2">);</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">angka7</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">angka7</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">angka8</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">angka8</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">angka9</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">angka9</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">angka4</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">angka4</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">angka5</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">angka5</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">angka6</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">angka6</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">angka1</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">angka1</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">angka2</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">angka2</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">angka3</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">angka3</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">btn00</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">btn00</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">angka0</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">angka0</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">btnTambahKurang</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s0">if</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">().</span><span class="s1">contains</span><span class="s2">(</span><span class="s3">&quot;.&quot;</span><span class="s2">)){</span>
+                    <span class="s2">{</span>
+                        <span class="s0">double </span><span class="s1">pm </span><span class="s2">= </span><span class="s1">Double</span><span class="s2">.</span><span class="s1">parseDouble</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+                        <span class="s1">pm</span><span class="s2">=</span><span class="s1">pm</span><span class="s2">*-</span><span class="s4">1</span><span class="s2">;</span>
+                        <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">String</span><span class="s2">.</span><span class="s1">valueOf</span><span class="s2">(</span><span class="s1">pm</span><span class="s2">));</span>
+                    <span class="s2">}</span>
+                    <span class="s2">{</span>
+                        <span class="s0">long </span><span class="s1">PM </span><span class="s2">= </span><span class="s1">Long</span><span class="s2">.</span><span class="s1">parseLong</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+                        <span class="s1">PM </span><span class="s2">= </span><span class="s1">PM</span><span class="s2">*-</span><span class="s4">1</span><span class="s2">;</span>
+                        <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">String</span><span class="s2">.</span><span class="s1">valueOf</span><span class="s2">(</span><span class="s1">PM</span><span class="s2">));</span>
+                    <span class="s2">}</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">btnTitik</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s0">if</span><span class="s2">(!</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">().</span><span class="s1">contains</span><span class="s2">(</span><span class="s3">&quot;.&quot;</span><span class="s2">));</span>
+                <span class="s2">{</span>
+                    <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">() + </span><span class="s1">btnTitik</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">btnTambah</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">a </span><span class="s2">= </span><span class="s1">Double</span><span class="s2">.</span><span class="s1">parseDouble</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+                <span class="s1">op </span><span class="s2">= </span><span class="s3">&quot;+&quot;</span><span class="s2">;</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;&quot;</span><span class="s2">);;</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">btnKurang</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">a </span><span class="s2">= </span><span class="s1">Double</span><span class="s2">.</span><span class="s1">parseDouble</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+                <span class="s1">op </span><span class="s2">= </span><span class="s3">&quot;-&quot;</span><span class="s2">;</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;&quot;</span><span class="s2">);;</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">btnKali</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">a </span><span class="s2">= </span><span class="s1">Double</span><span class="s2">.</span><span class="s1">parseDouble</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+                <span class="s1">op </span><span class="s2">= </span><span class="s3">&quot;*&quot;</span><span class="s2">;</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;&quot;</span><span class="s2">);;</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">btnBagi</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">a </span><span class="s2">= </span><span class="s1">Double</span><span class="s2">.</span><span class="s1">parseDouble</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+                <span class="s1">op </span><span class="s2">= </span><span class="s3">&quot;/&quot;</span><span class="s2">;</span>
+                <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s3">&quot;&quot;</span><span class="s2">);;</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">btngatau</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">String backspace </span><span class="s2">= </span><span class="s0">null</span><span class="s2">;</span>
+
+                <span class="s0">if</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">().</span><span class="s1">length</span><span class="s2">() &gt; </span><span class="s4">0</span><span class="s2">)</span>
+                <span class="s2">{</span>
+                    <span class="s1">StringBuilder strB </span><span class="s2">= </span><span class="s0">new </span><span class="s1">StringBuilder</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+                    <span class="s1">strB</span><span class="s2">.</span><span class="s1">deleteCharAt</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">().</span><span class="s1">length</span><span class="s2">() - </span><span class="s4">1</span><span class="s2">);</span>
+                    <span class="s1">backspace </span><span class="s2">= </span><span class="s1">String</span><span class="s2">.</span><span class="s1">valueOf</span><span class="s2">(</span><span class="s1">strB</span><span class="s2">);</span>
+                    <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">backspace</span><span class="s2">);</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+        <span class="s1">btnHasil</span><span class="s2">.</span><span class="s1">addActionListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">ActionListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">actionPerformed</span><span class="s2">(</span><span class="s1">ActionEvent e</span><span class="s2">) {</span>
+                <span class="s1">b </span><span class="s2">= </span><span class="s1">Double</span><span class="s2">.</span><span class="s1">parseDouble</span><span class="s2">(</span><span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">());</span>
+
+                <span class="s0">if</span><span class="s2">(</span><span class="s1">op </span><span class="s2">== </span><span class="s3">&quot;+&quot;</span><span class="s2">){</span>
+                    <span class="s1">result </span><span class="s2">= </span><span class="s1">a</span><span class="s2">+</span><span class="s1">b</span><span class="s2">;</span>
+                    <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">String</span><span class="s2">.</span><span class="s1">valueOf</span><span class="s2">(</span><span class="s1">result</span><span class="s2">));</span>
+                <span class="s2">}</span><span class="s0">else if</span><span class="s2">(</span><span class="s1">op </span><span class="s2">== </span><span class="s3">&quot;-&quot;</span><span class="s2">){</span>
+                    <span class="s1">result </span><span class="s2">= </span><span class="s1">a</span><span class="s2">-</span><span class="s1">b</span><span class="s2">;</span>
+                    <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">String</span><span class="s2">.</span><span class="s1">valueOf</span><span class="s2">(</span><span class="s1">result</span><span class="s2">));</span>
+                <span class="s2">}</span><span class="s0">else if</span><span class="s2">(</span><span class="s1">op </span><span class="s2">== </span><span class="s3">&quot;*&quot;</span><span class="s2">){</span>
+                    <span class="s1">result </span><span class="s2">= </span><span class="s1">a</span><span class="s2">*</span><span class="s1">b</span><span class="s2">;</span>
+                    <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">String</span><span class="s2">.</span><span class="s1">valueOf</span><span class="s2">(</span><span class="s1">result</span><span class="s2">));</span>
+                <span class="s2">}</span><span class="s0">else if</span><span class="s2">(</span><span class="s1">op </span><span class="s2">== </span><span class="s3">&quot;/&quot;</span><span class="s2">){</span>
+                    <span class="s1">result </span><span class="s2">= </span><span class="s1">a</span><span class="s2">/</span><span class="s1">b</span><span class="s2">;</span>
+                    <span class="s1">txtDisplay</span><span class="s2">.</span><span class="s1">setText</span><span class="s2">(</span><span class="s1">String</span><span class="s2">.</span><span class="s1">valueOf</span><span class="s2">(</span><span class="s1">result</span><span class="s2">));</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">JFrame frame </span><span class="s2">= </span><span class="s0">new </span><span class="s1">JFrame</span><span class="s2">(</span><span class="s3">&quot;kalkulator&quot;</span><span class="s2">);</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">setContentPane</span><span class="s2">(</span><span class="s0">new </span><span class="s1">kalkulator</span><span class="s2">().</span><span class="s1">Calculator</span><span class="s2">);</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">setDefaultCloseOperation</span><span class="s2">(</span><span class="s1">JFrame</span><span class="s2">.</span><span class="s1">EXIT_ON_CLOSE</span><span class="s2">);</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">pack</span><span class="s2">();</span>
+        <span class="s1">frame</span><span class="s2">.</span><span class="s1">setVisible</span><span class="s2">(</span><span class="s0">true</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">private void </span><span class="s1">createUIComponents</span><span class="s2">() {</span>
+        <span class="s5">// TODO: place custom component creation code here</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

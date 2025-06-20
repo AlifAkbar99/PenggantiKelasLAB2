@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="kalkulator">
+  <grid id="27dc6" binding="Calculator" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="5" left="5" bottom="5" right="5"/>
+    <constraints>
+      <xy x="20" y="20" width="400" height="405"/>
+    </constraints>
+    <properties>
+      <background color="-270"/>
+      <enabled value="false"/>
+      <minimumSize width="285" height="405"/>
+      <preferredSize width="275" height="405"/>
+      <verifyInputWhenFocusTarget value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="eccd6" class="javax.swing.JButton" binding="AC">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <actionCommand value="AC"/>
+          <font name="Segoe UI" size="18" style="1"/>
+          <label value="AC"/>
+          <text value="AC"/>
+        </properties>
+      </component>
+      <component id="290ee" class="javax.swing.JButton" binding="angka7">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="7"/>
+        </properties>
+      </component>
+      <component id="887f2" class="javax.swing.JButton" binding="angka4">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="4"/>
+        </properties>
+      </component>
+      <component id="52235" class="javax.swing.JButton" binding="angka1">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="1"/>
+        </properties>
+      </component>
+      <component id="b61c5" class="javax.swing.JButton" binding="btn00">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="00"/>
+        </properties>
+      </component>
+      <component id="89818" class="javax.swing.JButton" binding="btngatau">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="→"/>
+        </properties>
+      </component>
+      <component id="d808d" class="javax.swing.JButton" binding="angka8">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="8"/>
+        </properties>
+      </component>
+      <component id="628b7" class="javax.swing.JButton" binding="angka5">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="5"/>
+        </properties>
+      </component>
+      <component id="3845" class="javax.swing.JButton" binding="angka2">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="2"/>
+        </properties>
+      </component>
+      <component id="55a28" class="javax.swing.JButton" binding="angka0">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="9c001" class="javax.swing.JButton" binding="btnKurang">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="-"/>
+        </properties>
+      </component>
+      <component id="6cd02" class="javax.swing.JButton" binding="btnKali">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="×"/>
+        </properties>
+      </component>
+      <component id="34fa7" class="javax.swing.JButton" binding="btnBagi">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="÷"/>
+        </properties>
+      </component>
+      <component id="1e9c2" class="javax.swing.JButton" binding="btnHasil">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="="/>
+          <verifyInputWhenFocusTarget value="false"/>
+        </properties>
+      </component>
+      <component id="35900" class="javax.swing.JButton" binding="btnTambahKurang">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="±"/>
+        </properties>
+      </component>
+      <component id="15d5b" class="javax.swing.JButton" binding="angka9">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="9"/>
+        </properties>
+      </component>
+      <component id="cf743" class="javax.swing.JButton" binding="angka6">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="6"/>
+        </properties>
+      </component>
+      <component id="bccd" class="javax.swing.JButton" binding="angka3">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="3"/>
+        </properties>
+      </component>
+      <component id="52405" class="javax.swing.JButton" binding="btnTitik">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="."/>
+        </properties>
+      </component>
+      <component id="39206" class="javax.swing.JButton" binding="btnTambah">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="60"/>
+            <preferred-size width="60" height="60"/>
+            <maximum-size width="60" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <text value="+"/>
+        </properties>
+      </component>
+      <component id="1aeab" class="javax.swing.JTextField" binding="txtDisplay">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="275" height="60"/>
+            <preferred-size width="275" height="60"/>
+            <maximum-size width="275" height="60"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe UI" size="18" style="1"/>
+          <horizontalAlignment value="4"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
